@@ -1,0 +1,31 @@
+#include <string>
+using namespace std;
+
+class Shoes{
+    private:
+        string ID;
+        string Name;
+        string Brand;
+        int Size;
+        long long Price;
+        int Quantity;
+    public:
+        Shoes();
+        Shoes(const string&,const string&,const string&,const int&,const long long&,const int&);
+        void Input();
+        void Output();
+
+        string GetID() const;
+        string GetName() const;
+        string GetBrand() const;
+        int GetSize() const;
+        long long GetPrice() const;
+        int GetQuantity() const;
+
+        void SetID(const string&);
+        void SetName(const string&);
+        void SetBrand(const string&);
+        void SetSize(const int&);
+        void SetPrice(const long long&);
+        void SetQuantity(const int&);
+};
